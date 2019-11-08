@@ -4,7 +4,6 @@ import utils
 
 jd_sign_page = 'https://vip.jd.com/sign/index'
 zdm_page = 'https://www.smzdm.com/'
-zdm_login_button = '/html/body/div[2]/div/div[3]/div[3]/div[1]/div[2]/div[1]/a'
 zdm_sign_button = '/html/body/div[2]/div/div[3]/div[3]/div[2]/a'
 
 print("start signing...")
