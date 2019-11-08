@@ -1,5 +1,4 @@
 *.pickle
-.gitignore
 test.py
 .idea/
 # Created by .ignore support plugin (hsz.mobi)

@@ -7,8 +7,9 @@ zdm_page = 'https://www.smzdm.com/'
 zdm_login_button = '/html/body/div[2]/div/div[3]/div[3]/div[1]/div[2]/div[1]/a'
 zdm_sign_button = '/html/body/div[2]/div/div[3]/div[3]/div[2]/a'
 
-# jd sign
 print("start signing...")
+
+# jd sign
 browser = webdriver.Chrome()
 jd_cookies = utils.read_jd_cookies()
 browser.get(jd_sign_page)
@@ -26,7 +27,7 @@ for cookie in jd_cookies:
 browser.get(jd_sign_page)
 browser.maximize_window()
 # todo: click sign button
-print('no signature waiting...')
+print('no signature wait...')
 time.sleep(2)
 
 # zdm sign
@@ -44,8 +45,8 @@ for cookie in zdm_cookies:
         "expires": None
     })
 browser.get(zdm_page)
-browser.maximize_window()
-# browser.find_element_by_xpath(zdm_sign_button).click()
-print('no signature waiting...')
+# browser.maximize_window()
+browser.find_element_by_xpath(zdm_sign_button).click()
+print('no signature wait...')
 time.sleep(2)
 browser.quit()
